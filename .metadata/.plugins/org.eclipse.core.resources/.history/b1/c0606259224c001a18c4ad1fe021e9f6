@@ -1,0 +1,11 @@
+package com.ioc.system;
+
+public class XYZCompany implements Company {
+
+	@Override
+	public void establish(String name) {
+		// TODO Auto-generated method stub
+		System.out.println("Registered and Started" + name + "Company");
+	}
+
+}

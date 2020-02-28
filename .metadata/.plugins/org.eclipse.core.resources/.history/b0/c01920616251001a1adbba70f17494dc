@@ -1,0 +1,13 @@
+package com.boot.services;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class DataService {
+
+	public Map<String,String[]> names() {
+		String[] names= {"Neethu"," Savita", "Shweta", "Manisha", "Sneha"};
+		String[] names2= {"Joe","Jacob","Paul"};
+		
+	}
+}

@@ -1,0 +1,5 @@
+package com.ioc.system2;
+
+public interface Project {
+
+}

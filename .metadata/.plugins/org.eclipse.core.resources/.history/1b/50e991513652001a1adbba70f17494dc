@@ -1,0 +1,10 @@
+$(document).ready(
+		function (){
+			alert("JQuery is working");
+			$('#city').keyup(
+					finction{
+						let pattern=$('#city').val();
+						$.get("http://localhost:8889/api/cities/"+pattern)
+					})
+		}
+		);

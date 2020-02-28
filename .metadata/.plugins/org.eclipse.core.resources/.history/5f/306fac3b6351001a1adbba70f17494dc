@@ -1,0 +1,22 @@
+package com.boot.controller;
+
+import java.util.Map;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RequestMapping("/api")
+public class APIController {
+	@AutoWired 
+	DataService dService;
+	@RequestMapping("/greet")
+	public String hello() {
+		return "Hello!! springboot!!!";
+	}
+
+	@RequestMapping("teams")public Map<String,String[]> teams(){
+		return dservice.names();
+	}
+	
+}

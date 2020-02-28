@@ -1,0 +1,13 @@
+package com.boot.repositories;
+
+
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.CrudRepository;
+
+import com.boot.model.City;
+
+public interface cityRepository extends CrudRepository<City, Long> {
+	@Query("from City")
+	public List<City> getCities(String pattern);
+
+}

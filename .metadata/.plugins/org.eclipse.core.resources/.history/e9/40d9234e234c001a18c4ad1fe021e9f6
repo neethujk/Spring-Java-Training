@@ -1,0 +1,22 @@
+package com.ioc.system;
+
+public class XYZCompany implements Company {
+
+	private BusinessOperation branch;
+
+	public BusinessOperation getBranch() {
+		return branch;
+	}
+
+	public void setBranch(BusinessOperation branch) {
+		this.branch = branch;
+	}
+
+	@Override
+	public void establish(String name) {
+		// TODO Auto-generated method stub
+		System.out.println("Registered and Started" + name + "Company");
+		branch.perform("Bengaluru");
+	}
+
+}

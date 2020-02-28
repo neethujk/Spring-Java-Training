@@ -1,0 +1,9 @@
+$(document).ready(
+		function (){
+			alert("JQuery is working");
+			$('#city').keyup(
+					finction{
+						let pattern=$('#city').val();
+					})
+		}
+		);

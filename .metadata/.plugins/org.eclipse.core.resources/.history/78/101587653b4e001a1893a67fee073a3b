@@ -1,0 +1,27 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<%
+String user= (String)session.getAttribute("user");
+String password=(String)session.getAttribute("pass");
+
+String user1= (String)application.getAttribute("user");
+String password1=(String)application.getAttribute("pass");
+%>
+<div style=" padding:10px;
+background-color:yellow;color blue;font-size:10px;">
+User is , <%=user %><br>
+Password is , <%=password%> <br>
+<u>Application variables</u><br>
+User1 is , <%=user1 %><br>
+Password1 is , <%=password1%> <br>
+
+</div>
+</body>
+</html>

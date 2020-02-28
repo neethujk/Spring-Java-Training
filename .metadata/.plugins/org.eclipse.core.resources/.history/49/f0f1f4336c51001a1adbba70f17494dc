@@ -1,0 +1,14 @@
+package com.boot.model;
+
+import javax.persistence.Entity;
+
+@Entity
+public class city {
+	@Id
+	private Integer id;
+	@Column
+	private String name;
+	@Column
+	private String countryCode;
+
+}

@@ -1,0 +1,13 @@
+package com.ioc.system;
+
+public class Recruit implements Process{
+
+	@Override
+	public void process(String name) {
+		// TODO Auto-generated method stub
+		System.out.println("Recruitment for " + name);
+	}
+	
+	
+
+}

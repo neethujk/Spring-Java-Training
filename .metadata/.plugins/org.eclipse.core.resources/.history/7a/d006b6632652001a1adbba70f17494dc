@@ -1,0 +1,28 @@
+package com.boot.controller;
+
+import java.util.List;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.boot.model.Nation;
+
+@Controller
+public class WebController {
+	@RequestMapping("/hello.do")
+	public String firstRequest()
+	{
+		System.out.println("In controller");
+		return "first";
+	}
+	
+	@RequestMapping("/cities.do")
+	public String cities(ModelMap map)
+	{
+		map.addAttribute("counties",(List<Nation> nation.findAll());
+		return "cities";
+	}
+	
+
+}

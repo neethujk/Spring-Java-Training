@@ -1,0 +1,6 @@
+package com.courses.services;
+
+@Service
+public class DataService {
+
+}

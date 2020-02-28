@@ -1,0 +1,6 @@
+package com.boot.model;
+
+@Entity
+public class city {
+
+}

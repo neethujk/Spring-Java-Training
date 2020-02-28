@@ -1,0 +1,15 @@
+package com.boot.services;
+
+import com.boot.repositories.PersonRepository;
+
+@Service
+public class PersonService {
+	@Autowired
+	PersonRepository prepo;
+	
+	public List<Person> getPeople()
+	{
+		return((List<Person>)prepo.findAll());
+	}
+
+}

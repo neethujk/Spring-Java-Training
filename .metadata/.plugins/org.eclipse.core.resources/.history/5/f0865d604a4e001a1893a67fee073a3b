@@ -1,0 +1,11 @@
+package com.springmvc.control;
+
+import org.springframework.stereotype.Controller;
+
+@Controller
+public class FirstController {
+
+	@RequestMapping("/hello")
+	public String doThis()
+	{return "home";
+}

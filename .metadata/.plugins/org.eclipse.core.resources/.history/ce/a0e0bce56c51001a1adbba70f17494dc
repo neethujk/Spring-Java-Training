@@ -1,0 +1,16 @@
+package com.boot.app;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
+
+@SpringBootApplication
+@ComponentScan(basePackages="com.boot.*")
+@EntityScan(basePackages="com.boot.model")//entity classes mapping done in this package
+public class FirstbootApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(FirstbootApplication.class, args);
+	}
+
+}

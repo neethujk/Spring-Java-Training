@@ -1,0 +1,21 @@
+$(document).ready(
+		function (){
+			alert("JQuery is working");
+			$('#city').keyup(
+					finction{
+						let pattern=$('#city').val();
+						$.get("http://localhost:8898/api/cities/"+pattern,function(cities))
+						{
+						let code="";
+						for(let xin cities){
+							code+="<tr>";
+							code+="<td>"+cities[x].name+"<\td>";
+							code+="<td>"+cities[x].district+"<\td>";
+							code+="<td>"+cities[x].population+"<\td>";
+							code+="<\tr>";
+							
+						}
+					}
+					})
+		}
+		);

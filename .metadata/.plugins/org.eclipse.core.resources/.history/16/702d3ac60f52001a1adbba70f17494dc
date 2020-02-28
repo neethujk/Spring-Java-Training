@@ -1,0 +1,6 @@
+package com.boot.services;
+
+@Service
+public class PersonService {
+
+}

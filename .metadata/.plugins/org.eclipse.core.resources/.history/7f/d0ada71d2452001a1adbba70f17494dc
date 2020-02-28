@@ -1,0 +1,20 @@
+package com.boot.model;
+
+import javax.persistence.Column;
+
+
+@Entity
+public class Nation {
+
+	@ID
+	private String code;
+	@Column
+	private String capital;
+	@Column
+	private String name;
+	@Column
+	private String continent;
+	@Column
+	private String population;
+	
+}
